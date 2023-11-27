@@ -149,7 +149,7 @@ callback(myQuote);
 }
 
 function logQuote(quote){
-console.log(quote);
+console.log(quote); // Like I always say, eat your vegetables!
 }
 
 createQuote("eat your vegetables!", logQuote);
@@ -157,6 +157,8 @@ createQuote("eat your vegetables!", logQuote);
 9- Callback Hell and Why use Promise:  
  ES6 introduced promises as a native implementation. Before ES6 we were using callbacks to handle asynchronous operations.
 Here is Example:
+
+In this example we have to find Post and its comments
 
 const posts = [
 { post_id: 1, post_title: 'First Post' },
@@ -260,3 +262,16 @@ console.log('Comments:', comments);
 .catch(error => {
 console.error(error);
 });
+
+JavaScript Async/Await:
+
+What is a Synchronous System?
+In a synchronous system, tasks are completed one after another.
+Think of this as if you have just one hand to accomplish 10 tasks. So, you have to complete one task at a time.
+Well, JavaScript is by default Synchronous [single threaded]. Think about it like this – one thread means one hand with which to do stuff.
+
+What is an Asynchronous System?
+In this system, tasks are completed independently.
+Here, imagine that for 10 tasks, you have 10 hands. So, each hand can do each task independently and at the same time.
+
+("https://www.freecodecamp.org/news/javascript-async-await-tutorial-learn-callbacks-promises-async-await-by-making-icecream/")
